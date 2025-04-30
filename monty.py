@@ -31,7 +31,7 @@ def run_simulation(num_trials: int, switch: bool) -> float:
     return win_rate
 
 # Streamlit app
-st.title("🎯 Monty Hall Problem Simulator")
+st.title("Monty Hall Problem Simulator")
 
 st.sidebar.header("Simulation Settings")
 num_trials = st.sidebar.number_input("Number of Simulations", min_value=100, max_value=100000, value=1000, step=100)
@@ -58,9 +58,7 @@ ax.set_ylim(0, 100)
 
 st.pyplot(fig)
 
-st.write("""
----
-### 📖 About the Monty Hall Problem
+st.write(""" About the Monty Hall Problem
 - There are 3 doors. Behind one door is a car (prize); behind the others, goats.
 - You pick a door.
 - The host, who knows what is behind the doors, opens another door, revealing a goat.
